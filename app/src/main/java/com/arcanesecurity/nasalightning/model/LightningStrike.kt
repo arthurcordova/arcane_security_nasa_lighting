@@ -1,22 +1,22 @@
-package com.arcanesecurity.nasalighting.model
+package com.arcanesecurity.nasalightning.model
 
 import java.util.*
 
 /**
  * Models for results
  */
-data class LightingStrike(
+data class LightningStrike(
     val id: String,
     val date: Calendar,
-    val power: LightingPower,
-    val location: LightingLocation,
+    val power: LightningPower,
+    val location: LightningLocation,
 )
 
-data class LightingPower(
+data class LightningPower(
     val force: Double,
 )
 
-data class LightingLocation(
+data class LightningLocation(
     val latitude: Double,
     val longitude: Double,
     val city: String,

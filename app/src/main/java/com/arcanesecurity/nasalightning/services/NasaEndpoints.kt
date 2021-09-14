@@ -1,6 +1,6 @@
-package com.arcanesecurity.nasalighting.services
+package com.arcanesecurity.nasalightning.services
 
-import com.arcanesecurity.nasalighting.model.LightingStrike
+import com.arcanesecurity.nasalightning.model.LightningStrike
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -22,11 +22,11 @@ interface NasaEndpoints {
      * @param country String -> country for research
      * @param date String -> date for research
      */
-    @GET("/lights")
+    @GET("/lightnings")
     suspend fun fetchLights(
         @Query("city") city: String,
         @Query("country") country: String,
         @Query("date") date: String
-    ): Response<List<LightingStrike>>
+    ): Response<List<LightningStrike>>
 
 }

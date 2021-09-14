@@ -1,4 +1,4 @@
-package com.arcanesecurity.nasalighting.view
+package com.arcanesecurity.nasalightning.view
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.lifecycle.Observer
 import com.arcanesecurity.nasalighting.R
-import com.arcanesecurity.nasalighting.model.LightingStrike
-import com.arcanesecurity.nasalighting.view_model.MainViewModel
+import com.arcanesecurity.nasalightning.model.LightningStrike
+import com.arcanesecurity.nasalightning.view_model.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,7 +19,7 @@ class MainFragment : Fragment(R.layout.main_fragment) {
 
     private lateinit var viewModel: MainViewModel
 
-    private val observerLights = Observer<List<LightingStrike>> {
+    private val observerLights = Observer<List<LightningStrike>> {
         //todo: uses d=the it (List<LightingStrike>) to do something here
     }
 

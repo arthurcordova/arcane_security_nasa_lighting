@@ -1,6 +1,6 @@
-package com.arcanesecurity.nasalighting.di
+package com.arcanesecurity.nasalightning.di
 
-import com.arcanesecurity.nasalighting.services.NasaEndpoints
+import com.arcanesecurity.nasalightning.services.NasaEndpoints
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

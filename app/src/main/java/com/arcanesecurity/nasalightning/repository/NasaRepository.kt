@@ -1,7 +1,7 @@
-package com.arcanesecurity.nasalighting.repository
+package com.arcanesecurity.nasalightning.repository
 
-import com.arcanesecurity.nasalighting.model.LightingStrike
-import com.arcanesecurity.nasalighting.services.NasaEndpoints
+import com.arcanesecurity.nasalightning.model.LightningStrike
+import com.arcanesecurity.nasalightning.services.NasaEndpoints
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -11,7 +11,7 @@ import javax.inject.Inject
 
 class NasaRepository @Inject constructor(private val endpoints: NasaEndpoints) {
 
-    suspend fun fetchLights(): List<LightingStrike>? {
+    suspend fun fetchLights(): List<LightningStrike>? {
         return withContext(CoroutineScope(Dispatchers.Default).coroutineContext) {
             val response = endpoints.fetchLights("dublin", "ireland", "08/09/2021")
             processData(response)

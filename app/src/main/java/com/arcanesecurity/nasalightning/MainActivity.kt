@@ -1,8 +1,9 @@
-package com.arcanesecurity.nasalighting
+package com.arcanesecurity.nasalightning
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.arcanesecurity.nasalighting.view.MainFragment
+import com.arcanesecurity.nasalighting.R
+import com.arcanesecurity.nasalightning.view.MainFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

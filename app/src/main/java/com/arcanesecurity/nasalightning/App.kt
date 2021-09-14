@@ -1,4 +1,4 @@
-package com.arcanesecurity.nasalighting
+package com.arcanesecurity.nasalightning
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

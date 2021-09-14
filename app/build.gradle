@@ -9,7 +9,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.arcanesecurity.nasalighting"
+        applicationId "com.arcanesecurity.nasalightning"
         minSdk 21
         targetSdk 31
         versionCode 1
